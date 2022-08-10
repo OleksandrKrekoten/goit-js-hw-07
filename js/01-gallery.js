@@ -33,10 +33,14 @@ galleryContainer.addEventListener("click", (event) => {
     <img src="${source}"width="800" height="600">`);
 
   instance.show();
+
   if (instance.show() === true) {
-  galleryContainer.addEventListener('keydown', keyPress)
- function keyPress(e) {
-    if(e.key === "Escape") {
+
+    galleryContainer.addEventListener('keydown', keyPress)
+    
+    function keyPress(event) {
+   
+    if(event.key === "Escape") {
         instance.close()
     }
 }
